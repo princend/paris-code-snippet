@@ -1,50 +1,196 @@
 {
     "payoffSums": {
-      "prefix": "p",
-      "scope": "javascript,typescript,css,scss,html,json",
-      "body": [
-        "payoffSums$0"
-      ],
-      "description": "payoffSums"
+        "prefix": "p",
+        "scope": "javascript,typescript,css,scss,html,json",
+        "body": [
+            "payoffSums$0"
+        ],
+        "description": "payoffSums"
     },
     "memberCounts": {
-      "prefix": "m",
-      "scope": "javascript,typescript,css,scss,html,json",
-      "body": [
-        "memberCounts$0"
-      ],
-      "description": "memberCounts"
+        "prefix": "m",
+        "scope": "javascript,typescript,css,scss,html,json",
+        "body": [
+            "memberCounts$0"
+        ],
+        "description": "memberCounts"
     },
     "memberSums": {
-      "prefix": "m",
-      "scope": "javascript,typescript,css,scss,html,json",
-      "body": [
-        "memberSums$0"
-      ],
-      "description": "memberSums"
+        "prefix": "m",
+        "scope": "javascript,typescript,css,scss,html,json",
+        "body": [
+            "memberSums$0"
+        ],
+        "description": "memberSums"
     },
     "wagersCounts": {
-      "prefix": "w",
-      "scope": "javascript,typescript,css,scss,html,json",
-      "body": [
-        "wagersCounts$0"
-      ],
-      "description": "wagersCounts"
+        "prefix": "w",
+        "scope": "javascript,typescript,css,scss,html,json",
+        "body": [
+            "wagersCounts$0"
+        ],
+        "description": "wagersCounts"
     },
     "betAmountSums": {
-      "prefix": "b",
-      "scope": "javascript,typescript,css,scss,html,json",
-      "body": [
-        "betAmountSums$0"
-      ],
-      "description": "betAmountSums"
+        "prefix": "b",
+        "scope": "javascript,typescript,css,scss,html,json",
+        "body": [
+            "betAmountSums$0"
+        ],
+        "description": "betAmountSums"
     },
     "bite": {
-      "prefix": "b",
-      "scope": "javascript,typescript,css,scss,html,json",
-      "body": [
-        "bite$0"
-      ],
-      "description": "bite"
+        "prefix": "b",
+        "scope": "javascript,typescript,css,scss,html,json",
+        "body": [
+            "bite$0"
+        ],
+        "description": "bite"
+    },
+    "rxjs subscribe": {
+        "prefix": [
+            "rxjs",
+            "subscibe"
+        ],
+        "body": [
+            "this.${1:service}.subscribe(${2:resp}=> {",
+            "\t$0",
+            "})"
+        ],
+        "description": "rxjs ,A Service Subscibe."
+    },
+    "jasmine test": {
+        "prefix": [
+            "jasmine",
+            "test"
+        ],
+        "body": [
+            "it(`when ${1:property} is ${2:1},then ${3:result} is ${4:1}`, () => {",
+            "let ${1:property} = ${2:1}",
+            "expect(${1:property}).toBe(${4:1});",
+            "});"
+        ],
+        "description": "jasmine ,a single test."
+    },
+    "jasmine fn getComparisionDate": {
+        "prefix": [
+            "jasmine",
+            "getComparisionDate"
+        ],
+        "body": [
+            "function getComparisionDate() {",
+            "return {",
+            "startDate:'$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE',",
+            "endDate:'$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE',",
+            "comparedToStartDate:'$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE',",
+            "comparedToEndDate:'$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE',",
+            "dateType: DateType.D,",
+            "format: () => 'YYYY-MM-DD'",
+            "}",
+            "}"
+        ],
+        "description": "jasmine ,a single test."
+    },
+    "configureTestingModule": {
+        "prefix": [
+            "jasmine",
+            "configureTestingModule"
+        ],
+        "body": [
+            "beforeEach(() => {",
+            "TestBed.configureTestingModule({",
+            "declarations: [${1}],",
+            "imports: [TranslateModule.forRoot(), RouterTestingModule,",
+            "HttpClientTestingModule],",
+            "providers: [StorageService,",
+            "Logger, Globals,",
+            "{ provide: APP_CONFIG, useValue: APP_DI_CONFIG },",
+            "GlobalState, UserService,",
+            "NgxPermissionsStore,",
+            "NgxPermissionsConfigurationStore, NgxRolesStore,",
+            "]",
+            "})",
+            ".compileComponents();",
+            "});"
+        ],
+        "description": "jasmine ,configureTestingModule."
+    },
+    "createComponent": {
+        "prefix": [
+            "jasmine",
+            "createComponent"
+        ],
+        "body": [
+            "beforeEach(() => {",
+            "fixture = TestBed.createComponent(${1:Component});",
+            "component = fixture.componentInstance;",
+            "service = TestBed.get(${2:Service});",
+            "fixture.detectChanges();",
+            "});"
+        ],
+        "description": "jasmine ,createComponent."
+    },
+    "createSpec": {
+        "prefix": [
+            "jasmine",
+            "createSpec"
+        ],
+        "body": [
+            "import { ComponentFixture, TestBed } from '@angular/core/testing';",
+            "import { TranslateModule } from '@ngx-translate/core';",
+            "import { StorageService, Logger, Globals, UserService } from 'app/services';",
+            "import { RouterTestingModule } from '@angular/router/testing';",
+            "import { APP_CONFIG, APP_DI_CONFIG } from 'app/app-config/app-config.constants';",
+            "import { GlobalState } from 'app/global.state';",
+            "import { HttpClientTestingModule } from '@angular/common/http/testing';",
+            "import { NgxPermissionsStore, NgxPermissionsConfigurationStore, NgxRolesStore } from 'ngx-permissions';",
+            "",
+            "describe('${1}', () => {",
+            "  let component: ${2:Component};",
+            "  let fixture: ComponentFixture<${2:Component}>;",
+            "  let service: ${3:Service};",
+            "",
+            "  beforeEach(() => {",
+            "    TestBed.configureTestingModule({",
+            "      declarations: [${2:Component}],",
+            "      imports: [TranslateModule.forRoot(), RouterTestingModule,",
+            "        HttpClientTestingModule],",
+            "      providers: [ StorageService,",
+            "        Logger, Globals,",
+            "        ${3:Service},",
+            "        { provide: APP_CONFIG, useValue: APP_DI_CONFIG },",
+            "        GlobalState, UserService,NgxPermissionsStore,",
+            "        NgxPermissionsConfigurationStore, NgxRolesStore",
+            "      ]",
+            "    })",
+            "      .compileComponents();",
+            "  });",
+            "",
+            "",
+            "  beforeEach(() => {",
+            "    fixture = TestBed.createComponent(${2:Component});",
+            "    component = fixture.componentInstance;",
+            "    service = TestBed.get(${3:Service});",
+            "    fixture.detectChanges();",
+            "  });",
+            "",
+            "  ",
+            "  it('should create', () => {",
+            "    expect(component).toBeTruthy();",
+            "  });",
+            "",
+            "  it('${4:}', () => {",
+            "    expect(${5:}).toBe(${6:})",
+            "  });",
+            "});"
+        ],
+        "description": "jasmine ,createSpec."
+    },
+    "in": {
+        "prefix": "in",
+        "body": [
+            "console.log('in')"
+        ],
+        "description": "javascript ,console.log('in')"
     }
-  }
+}
