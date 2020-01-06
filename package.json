@@ -1,7 +1,7 @@
 {
-	"name": "vscode-test-extension",
-	"displayName": "vscode-test-extension",
-	"description": "An awesome vscode extension",
+	"name": "paris-snippet-extension",
+	"displayName": "paris-snippet-extension",
+	"description": "An vscode extension for paris team snippets",
 	"version": "0.0.1",
 	"publisher": "Chenmenglan",
 	"engines": {
@@ -29,23 +29,7 @@
 			},
 			{
 				"language": "typescript",
-				"path": "./snippets/javascript.json"
-			},
-			{
-				"language": "javascript",
-				"path": "./snippets/jquery.json"
-			},
-			{
-				"language": "javascriptreact",
-				"path": "./snippets/react.json"
-			},
-			{
-				"language": "typescriptreact",
-				"path": "./snippets/react.json"
-			},
-			{
-				"language": "vue",
-				"path": "./snippets/vue.json"
+				"path": "./snippets/typescript.json"
 			}
 		]
 	},

@@ -1,0 +1,50 @@
+{
+    "payoffSums": {
+      "prefix": "p",
+      "scope": "javascript,typescript,css,scss,html,json",
+      "body": [
+        "payoffSums$0"
+      ],
+      "description": "payoffSums"
+    },
+    "memberCounts": {
+      "prefix": "m",
+      "scope": "javascript,typescript,css,scss,html,json",
+      "body": [
+        "memberCounts$0"
+      ],
+      "description": "memberCounts"
+    },
+    "memberSums": {
+      "prefix": "m",
+      "scope": "javascript,typescript,css,scss,html,json",
+      "body": [
+        "memberSums$0"
+      ],
+      "description": "memberSums"
+    },
+    "wagersCounts": {
+      "prefix": "w",
+      "scope": "javascript,typescript,css,scss,html,json",
+      "body": [
+        "wagersCounts$0"
+      ],
+      "description": "wagersCounts"
+    },
+    "betAmountSums": {
+      "prefix": "b",
+      "scope": "javascript,typescript,css,scss,html,json",
+      "body": [
+        "betAmountSums$0"
+      ],
+      "description": "betAmountSums"
+    },
+    "bite": {
+      "prefix": "b",
+      "scope": "javascript,typescript,css,scss,html,json",
+      "body": [
+        "bite$0"
+      ],
+      "description": "bite"
+    }
+  }
