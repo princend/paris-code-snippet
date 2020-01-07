@@ -17,4 +17,5 @@
 
 ## example
 1.輸入const  https://i.imgur.com/pRq2on1.png
-2.result blob:https://imgur.com/a700e057-71f7-4836-b47a-829d36f04ff1
+2.result https://i.imgur.com/1H2S4AV.png
+
