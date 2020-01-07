@@ -6,7 +6,8 @@
 1.git clone https://github.com/princend/paris-code-snippet.git  </br>
 2.npm install -g vsce (有裝過就不用再裝了)  </br>
 3.vsce package  </br>
-4.安裝vsix檔 <img src="https://i.imgur.com/JYBU7es.png">  </br>
+4.安裝vsix檔   </br>
+<img src="https://i.imgur.com/JYBU7es.png">
 
 ## Type
 1.運算  </br>
@@ -16,6 +17,8 @@
 5.其他  </br>
 
 ## example
-1.輸入const  <img src="https://i.imgur.com/pRq2on1.png">  </br>
-2.result <img src="https://i.imgur.com/1H2S4AV.png">  </br>
+1.輸入const   </br>
+ <img src="https://i.imgur.com/pRq2on1.png">  </br>
+2.result  </br>
+ <img src="https://i.imgur.com/1H2S4AV.png">  </br>
 
