@@ -1,4 +1,70 @@
 {
+    "notLogic": {
+        "prefix": [
+            "not",
+            "notLogic"
+        ],
+        "body": [
+            "this.${1} = !this.${1}"
+        ],
+        "description": "notLogic."
+    },
+    "jsonparse": {
+        "prefix": [
+            "json",
+            "JSONparse"
+        ],
+        "body": [
+            "JSON.parse(JSON.stringify(${1}))"
+        ],
+        "description": "json.parse"
+    },
+    "Ternary Operator": {
+        "prefix": [
+            "three",
+            "Conditional Expression",
+            "Ternary Operator"
+        ],
+        "body": [
+            "${1}?${2}:${3}"
+        ],
+        "description": "三元運算子"
+    },
+    "export enum": {
+        "prefix": [
+            "enum"
+        ],
+        "body": [
+            "export enum ${1:Enum} {",
+            "\t ${2} = ${3},",
+            "$0",
+            "}"
+        ],
+        "description": "宣告列舉"
+    },
+    "export const": {
+        "prefix": [
+            "const"
+        ],
+        "body": [
+            "export const ${1} = [",
+            "\t $0",
+            "]"
+        ],
+        "description": "宣告const"
+    },
+    "export interface": {
+        "prefix": [
+            "interface"
+        ],
+        "body": [
+            "export interface ${1} {",
+            "\t ${2}:${3};",
+            "\t $0",
+            "}"
+        ],
+        "description": "宣告const"
+    },
     "payoffSums": {
         "prefix": "p",
         "scope": "javascript,typescript,css,scss,html,json",
@@ -186,11 +252,363 @@
         ],
         "description": "jasmine ,createSpec."
     },
-    "in": {
-        "prefix": "in",
-        "body": [
-            "console.log('in')"
+    "log": {
+        "prefix": [
+            "log",
+            "break"
         ],
-        "description": "javascript ,console.log('in')"
+        "body": [
+            "console.log(${1:'break'})"
+        ],
+        "description": "javascript ,console.log('break')"
+    },
+    "category": {
+        "prefix": "ca",
+        "body": [
+            "category"
+        ],
+        "description": "category"
+    },
+    "gameHall": {
+        "prefix": "ga",
+        "body": [
+            "gameHall"
+        ],
+        "description": "gameHall"
+    },
+    "rawDataType": {
+        "prefix": "ra",
+        "body": [
+            "rawDataType"
+        ],
+        "description": "rawDataType"
+    },
+    "activeChurnRate1": {
+        "prefix": "ac1",
+        "body": [
+            "activeChurnRate1"
+        ],
+        "description": "activeChurnRate1,活躍會員1日流失率"
+    },
+    "activeChurnRate7": {
+        "prefix": "ac7",
+        "body": [
+            "activeChurnRate7"
+        ],
+        "description": "activeChurnRate7,活躍會員7日流失率"
+    },
+    "activeChurnRate30": {
+        "prefix": "ac30",
+        "body": [
+            "activeChurnRate30"
+        ],
+        "description": "activeChurnRate30,活躍會員30日流失率"
+    },
+    "activeRetentionRate1": {
+        "prefix": "ac1",
+        "body": [
+            "activeRetentionRate1"
+        ],
+        "description": "activeRetentionRate1,活躍會員1日留存率"
+    },
+    "activeRetentionRate7": {
+        "prefix": "ac7",
+        "body": [
+            "activeRetentionRate7"
+        ],
+        "description": "activeRetentionRate7,活躍會員7日留存率"
+    },
+    "activeRetentionRate30": {
+        "prefix": "ac30",
+        "body": [
+            "activeRetentionRate30"
+        ],
+        "description": "activeRetentionRate30,活躍會員30日留存率"
+    },
+    "activeAddictiveRate": {
+        "prefix": "acr",
+        "body": [
+            "activeAddictiveRate"
+        ],
+        "description": "activeAddictiveRate,活躍會員黏着度"
+    },
+    "depChurnRate1": {
+        "prefix": "de1",
+        "body": [
+            "depChurnRate1"
+        ],
+        "description": "depChurnRate1,存款會員1日流失率"
+    },
+    "depChurnRate7": {
+        "prefix": "de7",
+        "body": [
+            "depChurnRate7"
+        ],
+        "description": "depChurnRate7,存款會員7日流失率"
+    },
+    "depChurnRate30": {
+        "prefix": "de30",
+        "body": [
+            "depChurnRate30"
+        ],
+        "description": "depChurnRate30,存款會員30日流失率"
+    },
+    "depRetentionRate1": {
+        "prefix": "de1",
+        "body": [
+            "depRetentionRate1"
+        ],
+        "description": "depRetentionRate1,存款會員1日留存率"
+    },
+    "depRetentionRate7": {
+        "prefix": "de7",
+        "body": [
+            "depRetentionRate7"
+        ],
+        "description": "depRetentionRate7,存款會員7日留存率"
+    },
+    "depRetentionRate30": {
+        "prefix": "de30",
+        "body": [
+            "depRetentionRate30"
+        ],
+        "description": "depRetentionRate30,存款會員30日留存率"
+    },
+    "depAddictiveRate": {
+        "prefix": "der",
+        "body": [
+            "depAddictiveRate"
+        ],
+        "description": "depAddictiveRate,存款會員黏着度"
+    },
+    "favorableTotal": {
+        "prefix": "fav",
+        "body": [
+            "favorableTotal"
+        ],
+        "description": "favorableTotal,优惠"
+    },
+    "discountTotal": {
+        "prefix": "dis",
+        "body": [
+            "discountTotal"
+        ],
+        "description": "discountTotal,反水"
+    },
+    "memberDiscountTotal": {
+        "prefix": "mem",
+        "body": [
+            "memberDiscountTotal"
+        ],
+        "description": "memberDiscountTotal,时时反水"
+    },
+    "thirdPartyPaymentTotal": {
+        "prefix": "th",
+        "body": [
+            "thirdPartyPaymentTotal"
+        ],
+        "description": "thirdPartyPaymentTotal,线上存款-金额"
+    },
+    "thirdPartyPaymentTimes": {
+        "prefix": "th",
+        "body": [
+            "thirdPartyPaymentTimes"
+        ],
+        "description": "thirdPartyPaymentTimes,线上存款-次数"
+    },
+    "creditDepositTotal": {
+        "prefix": "cr",
+        "body": [
+            "creditDepositTotal"
+        ],
+        "description": "creditDepositTotal,人工存款-金额"
+    },
+    "creditDepositTimes": {
+        "prefix": "cr",
+        "body": [
+            "creditDepositTimes"
+        ],
+        "description": "creditDepositTimes,人工存款-次数"
+    },
+    "depositTotal": {
+        "prefix": "de",
+        "body": [
+            "depositTotal"
+        ],
+        "description": "depositTotal,公司存款-金额"
+    },
+    "depositTotalTimes": {
+        "prefix": "de",
+        "body": [
+            "depositTotalTimes"
+        ],
+        "description": "depositTotalTimes,公司存款-次数"
+    },
+    "depositTimes": {
+        "prefix": "de",
+        "body": [
+            "depositTimes"
+        ],
+        "description": "depositTimes,存款总次数"
+    },
+    "withdrawTotal": {
+        "prefix": "wi",
+        "body": [
+            "withdrawTotal"
+        ],
+        "description": "withdrawTotal,线上取款-金额"
+    },
+    "withdrawTimes": {
+        "prefix": "wi",
+        "body": [
+            "withdrawTimes"
+        ],
+        "description": "withdrawTimes,取款总次数"
+    },
+    "creditWithdrawTotal": {
+        "prefix": "cr",
+        "body": [
+            "creditWithdrawTotal"
+        ],
+        "description": "creditWithdrawTotal,人工取款-金额"
+    },
+    "creditWithdrawTimes": {
+        "prefix": "cr",
+        "body": [
+            "creditWithdrawTimes"
+        ],
+        "description": "creditWithdrawTimes,人工取款-次数"
+    },
+    "firstDepositNumber": {
+        "prefix": "fi",
+        "body": [
+            "firstDepositNumber"
+        ],
+        "description": "firstDepositNumber,首存人数"
+    },
+    "firstDepositAmount": {
+        "prefix": "fi",
+        "body": [
+            "firstDepositAmount"
+        ],
+        "description": "firstDepositAmount,首存金額"
+    },
+    "depositAmount": {
+        "prefix": "de",
+        "body": [
+            "depositAmount"
+        ],
+        "description": "depositAmount,存款总额"
+    },
+    "withdrawAmount": {
+        "prefix": "wi",
+        "body": [
+            "withdrawAmount"
+        ],
+        "description": "withdrawAmount,取款总额"
+    },
+    "totalFirstDepositAmount": {
+        "prefix": "to",
+        "body": [
+            "totalFirstDepositAmount"
+        ],
+        "description": "totalFirstDepositAmount,首存总额"
+    },
+    "totalFirstDepositNumber": {
+        "prefix": "to",
+        "body": [
+            "totalFirstDepositNumber"
+        ],
+        "description": "totalFirstDepositNumber,首存人数"
+    },
+    "totalDepositAmount": {
+        "prefix": "to",
+        "body": [
+            "totalDepositAmount"
+        ],
+        "description": "totalDepositAmount,存款总额"
+    },
+    "totalDepositTimes": {
+        "prefix": "to",
+        "body": [
+            "totalDepositTimes"
+        ],
+        "description": "totalDepositTimes,存款总次数"
+    },
+    "totalWithdrawAmount": {
+        "prefix": "to",
+        "body": [
+            "totalWithdrawAmount"
+        ],
+        "description": "totalWithdrawAmount,取款总额"
+    },
+    "totalWithdrawTimes": {
+        "prefix": "to",
+        "body": [
+            "totalWithdrawTimes"
+        ],
+        "description": "totalWithdrawTimes,取款总次数"
+    },
+    "difference": {
+        "prefix": "di",
+        "body": [
+            "difference"
+        ],
+        "description": "difference,存提差"
+    },
+    "yuebao": {
+        "prefix": "yu",
+        "body": [
+            "yuebao"
+        ],
+        "description": "yuebao,餘額寶"
+    },
+    "getService": {
+        "prefix": [
+            "get",
+            "getService"
+        ],
+        "body": [
+            "get${1}(${2:params}) {",
+            "\t return this.get('${3}',this.getComplexObjectAsQueryString(${2:params}))",
+            "})"
+        ],
+        "description": "A Service for get."
+    },
+    "postService": {
+        "prefix": [
+            "post",
+            "postService"
+        ],
+        "body": [
+            "get${1}(${2:params}) {",
+            "\t return this.post('${3}',${2:params})",
+            "})"
+        ],
+        "description": "A Service for post."
+    },
+    "deleteService": {
+        "prefix": [
+            "delete",
+            "deleteService"
+        ],
+        "body": [
+            "delete${1}(${2:params}) {",
+            "\t return this.delete('${3}',${2:params})",
+            "})"
+        ],
+        "description": "A Service for delete."
+    },
+    "putService": {
+        "prefix": [
+            "put",
+            "putService"
+        ],
+        "body": [
+            "put${1}(${2:params}) {",
+            "\t return this.put('${3}',${2:params})",
+            "})"
+        ],
+        "description": "A Service for put."
     }
 }
