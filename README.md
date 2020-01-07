@@ -3,7 +3,7 @@
 給控台的程式碼快速片段輸入
 
 ## Installation
-1.git clone https://github.com/princend/paris-code-snippet.git  </br>
+1.git clone <img src="https://github.com/princend/paris-code-snippet.git">  </br>
 2.npm install -g vsce (有裝過就不用再裝了)  </br>
 3.vsce package  </br>
 4.安裝vsix檔 https://i.imgur.com/JYBU7es.png  </br>
