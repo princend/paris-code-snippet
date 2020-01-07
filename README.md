@@ -3,19 +3,19 @@
 給控台的程式碼快速片段輸入
 
 ## Installation
-1.git clone https://github.com/princend/paris-code-snippet.git
-2.npm install -g vsce (有裝過就不用再裝了)
-3.vsce package
-4.安裝vsix檔 https://i.imgur.com/JYBU7es.png
+1.git clone https://github.com/princend/paris-code-snippet.git  ＜/br＞
+2.npm install -g vsce (有裝過就不用再裝了)  ＜/br＞
+3.vsce package  ＜/br＞
+4.安裝vsix檔 https://i.imgur.com/JYBU7es.png  ＜/br＞
 
 ## Type
-1.運算 
-2.宣告
-3.控台欄位
-4.測試
-5.其他
+1.運算  ＜/br＞
+2.宣告  ＜/br＞
+3.控台欄位  ＜/br＞
+4.測試  ＜/br＞
+5.其他  ＜/br＞
 
 ## example
-1.輸入const  https://i.imgur.com/pRq2on1.png
-2.result https://i.imgur.com/1H2S4AV.png
+1.輸入const  https://i.imgur.com/pRq2on1.png  ＜/br＞
+2.result https://i.imgur.com/1H2S4AV.png  ＜/br＞
 
