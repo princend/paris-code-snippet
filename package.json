@@ -3,7 +3,7 @@
 	"displayName": "paris-snippet-extension",
 	"description": "An vscode extension for paris team snippets",
 	"version": "0.0.1",
-	"publisher": "Chenmenglan",
+	"publisher": "princend",
 	"engines": {
 		"vscode": "^1.12.0"
 	},
