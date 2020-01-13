@@ -1,4 +1,22 @@
 {
+    "arrowFunction": {
+        "prefix": [
+            "()"
+        ],
+        "body": [
+            "(${1}) => {${1}}"
+        ],
+        "description": "arrowFunction."
+    },
+    "newPromise": {
+        "prefix": [
+            "pro"
+        ],
+        "body": [
+            "new Promise((${1}) => {${1}})"
+        ],
+        "description": "new Promise."
+    },
     "notLogic": {
         "prefix": [
             "not",
@@ -51,7 +69,7 @@
             "\t $0",
             "]"
         ],
-        "description": "宣告const"
+        "description": "匯出常數"
     },
     "export interface": {
         "prefix": [
@@ -63,7 +81,19 @@
             "\t $0",
             "}"
         ],
-        "description": "宣告const"
+        "description": "匯出介面"
+    },
+    "export class": {
+        "prefix": [
+            "class"
+        ],
+        "body": [
+            "export class ${1} {",
+            "\t ${2}:${3};",
+            "\t $0",
+            "}"
+        ],
+        "description": "匯出類別"
     },
     "payoffSums": {
         "prefix": "p",
@@ -124,6 +154,16 @@
             "})"
         ],
         "description": "rxjs ,A Service Subscibe."
+    },
+    "jasmine expect": {
+        "prefix": [
+            "exp",
+            "expect"
+        ],
+        "body": [
+            "expect(${1}).toBe(${1});"
+        ],
+        "description": "jasmine ,a single expect."
     },
     "jasmine test": {
         "prefix": [
