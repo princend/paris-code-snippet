@@ -24,3 +24,4 @@
 
 ## 參考網站
 1.https://snippet-generator.app/?description=456&tabtrigger=ssss&snippet=sasdasd&mode=vscode
+2.https://code.visualstudio.com/docs/editor/userdefinedsnippets
